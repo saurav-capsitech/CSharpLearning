@@ -11,3 +11,20 @@ public class Product
         Console.WriteLine($"{Name} Price: {Price}");
     }
 }
+
+
+class Program
+{
+    static void Main()
+    {
+        int result = Multiply(5, 4);
+
+        Console.WriteLine(result);
+    }
+
+    static int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+}
+
