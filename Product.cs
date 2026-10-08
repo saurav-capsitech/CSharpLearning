@@ -2,29 +2,29 @@ namespace CSharpLearning;
 
 public class Product
 {
-    // Properties only - NO constructor written here!
     public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
 
     public void ShowPrice()
     {
-        Console.WriteLine($"{Name} Price: {Price}");
+        Console.WriteLine($"Product: {Name}, Price: {Price}");
     }
 }
 
-
-class Program
+public class Calculator
 {
-    static void Main()
-    {
-        int result = Multiply(5, 4);
+    public int Add(int a, int b) => a + b;
 
-        Console.WriteLine(result);
-    }
-
-    static int Multiply(int a, int b)
-    {
-        return a * b;
-    }
+    public int Multiply(int a, int b) => a * b;
 }
 
+public class Car
+{
+    public string Name { get; set; } = string.Empty;
+    public decimal Price { get; set; }
+
+    public void ShowDetails()
+    {
+        Console.WriteLine($"Car: {Name}, Price: {Price}");
+    }
+}
